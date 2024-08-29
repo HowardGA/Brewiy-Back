@@ -1,0 +1,40 @@
+POST http://localhost:9000/api/users/ HTTP/1.1
+Content-Type: application/json
+
+{
+  "phone": "6641234567",
+  "name": "Laura",
+  "email": "laura@gmail.com",
+  "birthdate": "2000-01-25",
+  "password": "Esp32pro!",
+  "data": []
+}
+###
+POST http://localhost:9000/api/login/ HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "HowieGAGA",
+  "password": "Esp32pro!"
+}
+
+
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/6611463164 HTTP/1.1
+
+###
+DELETE http://localhost:9000/api/users/6137e1725461c36eba8b2ce4 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/6137e2412e329eb206b0073c HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "John Conway",
+  "age": 80,
+  "email": "johnconway@email.com"
+}
